@@ -16,7 +16,7 @@ const Header = ({ handelToggleSideBar }) => {
 
     const [input, setInput] = useState('')
 
-    const handleSubmit = (e)=>{
+    const handleSubmit = (e) => {
         e.preventDefault()
         navigate(`/search/${input}`)
     }
@@ -29,7 +29,7 @@ const Header = ({ handelToggleSideBar }) => {
                 onClick={() => handelToggleSideBar()}
             />
             <div className="header__logo" onClick={() => navigate('/')}>
-                <img src="/images/logo.svg" alt='logo' />
+                <img src="http://pngimg.com/uploads/youtube/youtube_PNG2.png" alt="" />
                 <h4 className="header__logo__brand">YouTube</h4>
             </div>
             <form onSubmit={handleSubmit}>
