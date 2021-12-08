@@ -1,0 +1,81 @@
+@import "../../_base.scss";
+
+.video{
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+
+    font-weight: 500;
+    font-size: 0.9rem;
+
+    cursor: pointer;
+
+    &__top{
+        margin-bottom: 0.5rem;
+        position: relative;
+        img{
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        span{
+            position: absolute;
+
+            bottom: 0.3rem;
+            right: 0.3rem;
+            padding: 0.2rem;
+            background: #080808;
+            border-radius: 3px;
+        }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__channel{
+        margin-top: 0.5rem;
+        margin-right: .5rem;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    }
+
+    &__detail{
+
+        font-size: .8rem;
+        display: flex;
+        flex-direction: column;
+        
+        &__tittle{
+            font-weight: bold;
+            @include line-clamp(2);
+        }
+
+        &__channel{
+            font-size: .6rem;
+            @include line-clamp(1)
+        }
+
+        &__views{
+            font-size: .6rem;
+        }
+    }
+
+    &__more{
+        font-size: 20px;
+        
+    }
+        
+    
+    
+}
+
+@media (max-width:$breakpoint-small){
+    .video__detail__tittle{
+        @include line-clamp(1)
+    }
+}
+
