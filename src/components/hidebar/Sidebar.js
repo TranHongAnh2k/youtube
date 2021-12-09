@@ -17,6 +17,7 @@ import './_sidebar.scss'
 
 
 const Sidebar = ({ sideBar }) => {
+    // console.log(sideBar);
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
