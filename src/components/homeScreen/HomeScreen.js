@@ -24,7 +24,7 @@ const HomeScreen = () => {
 
 
     const fetchData = () => {
-        // activeCategory==="All"?dispatch(getPopularVideos()):dispatch(getVideosByCategory(activeCategory));
+        activeCategory==="All"?dispatch(getPopularVideos()):dispatch(getVideosByCategory(activeCategory));
 
     }
 
