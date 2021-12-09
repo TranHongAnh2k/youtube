@@ -1,55 +1,23 @@
-import React,{useEffect, useState} from "react";
-
-import Header from "./components/header/Header";
-import Sidebar from "./components/hidebar/Sidebar";
+import React from "react";
 import HomeScreen from "./components/homeScreen/HomeScreen";
-import {Container} from "react-bootstrap"
 import { Routes, Route} from "react-router-dom";
-import { useNavigate } from 'react-router'
-import Login from "./components/login/Login";
 
-import "./_app.scss"
-import "./_base.scss"
-import { useSelector } from "react-redux";
 import WatchScreen from "./components/watchScreen/WatchScreen";
 import SearchScreen from "./components/searchScreen/SearchScreen";
 
+import { Layout } from "./Layout";
+import Login from "./components/login/Login";
 
-const Layout = ({children})=>{
-  const [sideBar,toggleSideBar] = useState(false);
+import "./_base.scss"
+import "./_app.scss"
 
-  const handelToggleSideBar = ()=>toggleSideBar(val=>!val);
-  return (
-    <>
-      <Header handelToggleSideBar={()=>handelToggleSideBar()}/>
-      <div className="app__container">
-        <Sidebar sideBar={sideBar}/>
-        <Container className="app__main ">
-          {children}
-        </Container>
-      </div>
-    </>
-  )
-}
 
 function App() {
-
-  const {accessToken,loading} = useSelector(state=>state.auth)
-
-  const navigate = useNavigate()
-
-  useEffect(()=>{
-
-    if (!loading && !accessToken){
-      navigate('/auth')
-    }
-
-  },[accessToken,loading,navigate]);
 
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={
+        <Route path="*" element={
           <Layout>
             <HomeScreen/>
           </Layout>
@@ -64,8 +32,8 @@ function App() {
             <WatchScreen/>
           </Layout>
         }/>
-        <Route path="/auth" element ={<Login/>}/>
-     
+        <Route path="/login" element ={<Login/>}/>
+        
       </Routes>
     </div>
     
