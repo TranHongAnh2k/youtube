@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/youtube/static/css/main.db576172.chunk.css",
-    "main.js": "/youtube/static/js/main.741d2a69.chunk.js",
-    "main.js.map": "/youtube/static/js/main.741d2a69.chunk.js.map",
+    "main.css": "/youtube/static/css/main.7147651b.chunk.css",
+    "main.js": "/youtube/static/js/main.2d707eb6.chunk.js",
+    "main.js.map": "/youtube/static/js/main.2d707eb6.chunk.js.map",
     "runtime-main.js": "/youtube/static/js/runtime-main.a21a07ed.js",
     "runtime-main.js.map": "/youtube/static/js/runtime-main.a21a07ed.js.map",
     "static/css/2.d511c7e3.chunk.css": "/youtube/static/css/2.d511c7e3.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.7607e8b5.chunk.js.map": "/youtube/static/js/2.7607e8b5.chunk.js.map",
     "index.html": "/youtube/index.html",
     "static/css/2.d511c7e3.chunk.css.map": "/youtube/static/css/2.d511c7e3.chunk.css.map",
-    "static/css/main.db576172.chunk.css.map": "/youtube/static/css/main.db576172.chunk.css.map",
+    "static/css/main.7147651b.chunk.css.map": "/youtube/static/css/main.7147651b.chunk.css.map",
     "static/js/2.7607e8b5.chunk.js.LICENSE.txt": "/youtube/static/js/2.7607e8b5.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/youtube/static/media/slick.c94f7671.ttf"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.a21a07ed.js",
     "static/css/2.d511c7e3.chunk.css",
     "static/js/2.7607e8b5.chunk.js",
-    "static/css/main.db576172.chunk.css",
-    "static/js/main.741d2a69.chunk.js"
+    "static/css/main.7147651b.chunk.css",
+    "static/js/main.2d707eb6.chunk.js"
   ]
 }
