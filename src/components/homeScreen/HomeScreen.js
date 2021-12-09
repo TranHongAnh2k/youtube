@@ -30,7 +30,7 @@ const HomeScreen = () => {
 
 
     return (
-        <Container>
+        <Container className="homeScreen">
             <CategoriesBar />
             <InfiniteScroll
                 dataLength={videos.length}
